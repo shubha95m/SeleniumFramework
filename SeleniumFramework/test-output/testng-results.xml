@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="12995" started-at="2019-10-26T07:36:58Z" finished-at="2019-10-26T07:37:11Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="12995" started-at="2019-10-26T07:36:58Z" finished-at="2019-10-26T07:37:11Z">
+      <class name="com.TestCases.FBLoginTest">
+        <test-method status="PASS" signature="objectFactory()[pri:0, instance:com.TestCases.FBLoginTest@6767c1fc]" name="objectFactory" is-config="true" duration-ms="564" started-at="2019-10-26T13:06:57Z" finished-at="2019-10-26T13:06:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectFactory -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestCases.FBLoginTest@6767c1fc]" name="setup" is-config="true" duration-ms="8375" started-at="2019-10-26T13:06:58Z" finished-at="2019-10-26T13:07:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginFB()[pri:1, instance:com.TestCases.FBLoginTest@6767c1fc]" name="loginFB" duration-ms="2747" started-at="2019-10-26T13:07:06Z" finished-at="2019-10-26T13:07:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFB -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult)[pri:0, instance:com.TestCases.FBLoginTest@6767c1fc]" name="screenshot" is-config="true" duration-ms="1140" started-at="2019-10-26T13:07:09Z" finished-at="2019-10-26T13:07:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginFB status=SUCCESS method=FBLoginTest.loginFB()[pri:1, instance:com.TestCases.FBLoginTest@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestCases.FBLoginTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="706" started-at="2019-10-26T13:07:10Z" finished-at="2019-10-26T13:07:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.TestCases.FBLoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
