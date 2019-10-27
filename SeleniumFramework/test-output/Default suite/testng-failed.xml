@@ -5,7 +5,10 @@
     <classes>
       <class name="com.TestCases.FBLoginTest">
         <methods>
-          <include name="loginToFb"/>
+          <include name="loginFB"/>
+          <include name="objectFactory"/>
+          <include name="setup"/>
+          <include name="screenshot"/>
         </methods>
       </class> <!-- com.TestCases.FBLoginTest -->
     </classes>

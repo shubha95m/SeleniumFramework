@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeSuite;
 
 import com.Utilities.BrowserFactory;
 import com.Utilities.ConfigDataProvider;
-import com.Utilities.DataProvider;
+import com.Utilities.ExcelDataProvider ;
 import com.Utilities.Helper;
 import com.Utilities.SekuliFunction;
 import com.aventstack.extentreports.ExtentReports;
@@ -24,7 +24,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 public class BaseClass {
 	
 	public WebDriver driver;
-	public DataProvider excel;
+	public ExcelDataProvider excel;
 	public ConfigDataProvider config;
 	public ExtentReports extent;
 	public ExtentTest logger;
@@ -33,7 +33,7 @@ public class BaseClass {
 	@BeforeSuite
 	
 	public void objectFactory() {
-		excel = new DataProvider();
+		excel = new ExcelDataProvider ();
 		config = new ConfigDataProvider();
 		sekuli = new SekuliFunction();
 		

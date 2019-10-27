@@ -8,13 +8,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Generic {
 	
-	static WebDriver driver;
-	
-	public void funcFielsValueSet(WebElement element, String actionOn, String inpuyForTextbox, String textForDropdown) {
+	public void funcFielsValueSet(WebDriver driver, WebElement element, String actionOn, String inpuyForTextbox, String textForDropdown) {
+		
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		
+		element = wait.until(ExpectedConditions.visibilityOf(element));
 		
 		if (actionOn.equalsIgnoreCase("TEXT")) {
-			
-			//explicitWait(element);
 			
 			element.clear();
 			
@@ -39,14 +39,11 @@ public class Generic {
 		}
 		
 	}
-	
-	public static void explicitWait(WebElement element) {
-		
+
+	public void explicitWait(WebDriver driver, WebElement element) {
+
 		WebDriverWait wait=new WebDriverWait(driver, 20);
 		
 		element = wait.until(ExpectedConditions.visibilityOf(element));
-		
-		
 	}
-
 }

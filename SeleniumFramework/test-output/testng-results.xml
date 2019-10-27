@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="12995" started-at="2019-10-26T07:36:58Z" finished-at="2019-10-26T07:37:11Z">
+  <suite name="Default suite" duration-ms="14988" started-at="2019-10-27T09:38:50Z" finished-at="2019-10-27T09:39:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12995" started-at="2019-10-26T07:36:58Z" finished-at="2019-10-26T07:37:11Z">
+    <test name="Default test" duration-ms="14988" started-at="2019-10-27T09:38:50Z" finished-at="2019-10-27T09:39:05Z">
       <class name="com.TestCases.FBLoginTest">
-        <test-method status="PASS" signature="objectFactory()[pri:0, instance:com.TestCases.FBLoginTest@6767c1fc]" name="objectFactory" is-config="true" duration-ms="564" started-at="2019-10-26T13:06:57Z" finished-at="2019-10-26T13:06:58Z">
+        <test-method status="PASS" signature="objectFactory()[pri:0, instance:com.TestCases.FBLoginTest@6767c1fc]" name="objectFactory" is-config="true" duration-ms="1307" started-at="2019-10-27T15:08:49Z" finished-at="2019-10-27T15:08:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- objectFactory -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestCases.FBLoginTest@6767c1fc]" name="setup" is-config="true" duration-ms="8375" started-at="2019-10-26T13:06:58Z" finished-at="2019-10-26T13:07:06Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestCases.FBLoginTest@6767c1fc]" name="setup" is-config="true" duration-ms="9495" started-at="2019-10-27T15:08:50Z" finished-at="2019-10-27T15:08:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginFB()[pri:1, instance:com.TestCases.FBLoginTest@6767c1fc]" name="loginFB" duration-ms="2747" started-at="2019-10-26T13:07:06Z" finished-at="2019-10-26T13:07:09Z">
+        <test-method status="PASS" signature="loginFB()[pri:1, instance:com.TestCases.FBLoginTest@6767c1fc]" name="loginFB" duration-ms="3299" started-at="2019-10-27T15:08:59Z" finished-at="2019-10-27T15:09:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFB -->
-        <test-method status="PASS" signature="screenshot(org.testng.ITestResult)[pri:0, instance:com.TestCases.FBLoginTest@6767c1fc]" name="screenshot" is-config="true" duration-ms="1140" started-at="2019-10-26T13:07:09Z" finished-at="2019-10-26T13:07:10Z">
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult)[pri:0, instance:com.TestCases.FBLoginTest@6767c1fc]" name="screenshot" is-config="true" duration-ms="1288" started-at="2019-10-27T15:09:03Z" finished-at="2019-10-27T15:09:04Z">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestCases.FBLoginTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="706" started-at="2019-10-26T13:07:10Z" finished-at="2019-10-26T13:07:11Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestCases.FBLoginTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="870" started-at="2019-10-27T15:09:04Z" finished-at="2019-10-27T15:09:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.TestCases.FBLoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

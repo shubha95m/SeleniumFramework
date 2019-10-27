@@ -3,10 +3,16 @@ package com.Pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.Utilities.Generic;
 
 public class FBPage {
 	
 	WebDriver driver;
+	Generic generic = new Generic();
+	
 	
 	public FBPage(WebDriver ldriver) {
 		
@@ -24,10 +30,15 @@ public class FBPage {
 	
 	public void logintoFB(String un, String pass) {
 		
-		username.sendKeys(un);
-		password.sendKeys(pass);
-		login.click();
+		generic.funcFielsValueSet(driver, username, "text", un, "");
+		//username.sendKeys(un);
 		
-	}
+		//generic.funcFielsValueSet(driver, password, "text", pass, "");
+		password.sendKeys(pass); 
+		
+		generic.funcFielsValueSet(driver, login, "button", "", "");
+		//login.click();
+		
+	}                                                                                                                                                                                                                                      
 
 }

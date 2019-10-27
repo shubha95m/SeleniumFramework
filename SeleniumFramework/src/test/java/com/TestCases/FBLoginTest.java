@@ -28,6 +28,8 @@ public class FBLoginTest extends BaseClass {
 		
 		logger.info("Application started");
 		
+		//FBPage.logintoFB(excel.getCellData("Login", 0, 0), excel.getCellData("Login", 0, 0));
+		
 		FBPage.logintoFB(config.getDataFromConfig("Username"), config.getDataFromConfig("Password"));
 		
 		logger.pass("login successfully done");
