@@ -38,7 +38,7 @@ public class FBLoginTest extends BaseClass {
 		
 	}
 	
-	//@Test(priority=2)
+	//@Test(priority=1)
 	public void logintoGmailThroughSekuli() {
 		
 		logger = extent.createTest("login to Gmail Through Sekuli tool");
