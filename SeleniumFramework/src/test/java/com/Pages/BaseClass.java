@@ -35,7 +35,7 @@ public class BaseClass {
 	public void objectFactory() {
 		excel = new ExcelDataProvider ();
 		config = new ConfigDataProvider();
-		sekuli = new SekuliFunction();
+		//sekuli = new SekuliFunction();
 		
 		ExtentHtmlReporter reporter = new ExtentHtmlReporter(new File(System.getProperty("user.dir") +"/Reports/FbLogin"+Helper.getCurrentDateTime()+".html"));
 		extent = new ExtentReports();
