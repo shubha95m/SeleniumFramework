@@ -1,5 +1,6 @@
 package com.TestCases;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -9,13 +10,9 @@ import com.Pages.FBPage;
 import com.Utilities.BrowserFactory;
 import com.Utilities.ConfigDataProvider;
 import com.Utilities.Generic;
+import com.Utilities.Helper;
 
 public class FBLoginTest extends BaseClass {
-	
-	//WebDriver driver;
-	
-//	Generic generic = new Generic();
-//	ConfigDataProvider config = new ConfigDataProvider();
 	
 	@Test(priority=1)
 	public void loginFB() {
@@ -25,6 +22,8 @@ public class FBLoginTest extends BaseClass {
 		System.out.println("page title is:----------- " +driver.getTitle());
 		
 		FBPage FBPage = PageFactory.initElements(driver, FBPage.class);
+		
+		//generic.launchApplication(config.getDataFromConfig("fbUrl"));
 		
 		logger.info("Application started");
 		
@@ -69,5 +68,9 @@ public class FBLoginTest extends BaseClass {
 //		driver.quit();
 //		
 //	}
+	// to do: add all methods on element level in Page object only, 
+	//create one general class and extend that one to each page object class
+	//also need to add assertion and screenshot with each line by passing boolean thing and must need to take screenshot for each failure step: Hint: add this step in one method  
+//logger.addScreenCaptureFromPath(Helper.captureScreenshot(driver));
 
 } 

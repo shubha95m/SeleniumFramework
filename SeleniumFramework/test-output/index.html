@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.TestCases.FBLoginTest" class="method navigator-link" hash-for-method="logintoGmailThroughSekuli">logintoGmailThroughSekuli</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.TestCases.PhpTravelLoginTest" class="method navigator-link" hash-for-method="loginIntoPhpTravel">loginIntoPhpTravel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,16 +120,17 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.TestCases.FBLoginTest</span>
+              <span class="class-name">com.TestCases.PhpTravelLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="logintoGmailThroughSekuli">
-                  </a> <!-- logintoGmailThroughSekuli -->
-                  <span class="method-name">logintoGmailThroughSekuli</span>
+                  <a name="loginIntoPhpTravel">
+                  </a> <!-- loginIntoPhpTravel -->
+                  <span class="method-name">loginIntoPhpTravel</span>
                   <div class="stack-trace">java.lang.NullPointerException
-	at com.TestCases.FBLoginTest.logintoGmailThroughSekuli(FBLoginTest.java:46)
+	at com.Pages.MasterPage.launchApplication(MasterPage.java:138)
+	at com.TestCases.PhpTravelLoginTest.loginIntoPhpTravel(PhpTravelLoginTest.java:16)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -164,7 +165,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/bm/fwp49zc94bq4lf_r0vyl_0840000gn/T/testng-eclipse-997193427/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/bm/fwp49zc94bq4lf_r0vyl_0840000gn/T/testng-eclipse--1896663136/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -173,11 +174,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.TestCases.FBLoginTest&quot;&gt;
+      &lt;class name=&quot;com.TestCases.PhpTravelLoginTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;logintoGmailThroughSekuli&quot;/&gt;
+          &lt;include name=&quot;loginIntoPhpTravel&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.TestCases.FBLoginTest --&gt;
+      &lt;/class&gt; &lt;!-- com.TestCases.PhpTravelLoginTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -219,14 +220,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'logintoGmailThroughSekuli')
-data.setCell(0, 2, 'com.TestCases.FBLoginTest')
-data.setCell(0, 3, 6);
+data.setCell(0, 1, 'loginIntoPhpTravel')
+data.setCell(0, 2, 'com.TestCases.PhpTravelLoginTest')
+data.setCell(0, 3, 3984);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 ms</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -252,29 +253,23 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.TestCases.FBLoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">objectFactory</span>
+              <div class="chronological-class-name">com.TestCases.PhpTravelLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">objectFactory(org.testng.TestRunner@de88ac6)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">494 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">logintoGmailThroughSekuli</span>
-                <span class="method-start">3329 ms</span>
+                <span class="method-name">loginIntoPhpTravel</span>
+                <span class="method-start">1540 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">screenshot([TestResult name=logintoGmailThroughSekuli status=FAILURE method=FBLoginTest.logintoGmailThroughSeku...)</span>
-                <span class="method-start">3337 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4814 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">5526 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

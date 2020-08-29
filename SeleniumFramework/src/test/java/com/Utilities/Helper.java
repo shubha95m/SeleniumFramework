@@ -20,7 +20,7 @@ public class Helper {
 	public static String captureScreenshot(WebDriver driver) {
 		
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		screenshotPath = System.getProperty("user.dir")+"\\Screenshots\\"+getCurrentDateTime()+".png";
+		screenshotPath = System.getProperty("user.dir")+"/Screenshots/"+getCurrentDateTime()+".png";
 		try {
 			FileHandler.copy(src, new File(screenshotPath));
 		} 

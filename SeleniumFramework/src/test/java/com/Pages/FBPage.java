@@ -7,17 +7,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.Utilities.Generic;
+import com.Utilities.Reports;
 
-public class FBPage {
+public class FBPage extends MasterPage{
 	
-	WebDriver driver;
-	Generic generic = new Generic();
-	
-	
-	public FBPage(WebDriver ldriver) {
-		
-		this.driver = ldriver;
+	public FBPage(WebDriver driver, Reports report) {
+		super(driver, report);
+		// TODO Auto-generated constructor stub
 	}
+
+	WebDriver driver;
+
 	
 	@FindBy(id="email")
 	public WebElement username;
@@ -25,7 +25,7 @@ public class FBPage {
 	@FindBy(id="pass") 
 	public WebElement password;
 	
-	@FindBy(xpath=".//input[@type='submit']") 
+	@FindBy(xpath=".//button[@type='submit']") 
 	public WebElement login;
 	
 	public void logintoFB(String un, String pass) {
