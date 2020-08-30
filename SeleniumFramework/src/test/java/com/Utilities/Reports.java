@@ -68,21 +68,12 @@ public class Reports{
 	public void callLoggerMethod(String logerMessage) {
 		logger.info(logerMessage);
 	}
-	
-	public void attachedScreenshotInReport() {
-		try {
-			logger.addScreenCaptureFromPath(getScreenshot(driver));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 
 	public void reportPassEvent(WebDriver driver, String details) {
 		try {
 			if (enableScreenshotForPassFlagIS) {
 				logger.pass(details, MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot(driver)).build());
-				attachedScreenshotInReport();
+				logger.addScreenCaptureFromPath(getScreenshot(driver));
 			}
 			else
 				logger.pass(details);
@@ -95,7 +86,7 @@ public class Reports{
 		try {
 			if (enableScreenshotForFailFlagIS) {
 				logger.fail(details, MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot(driver)).build());
-				attachedScreenshotInReport();
+				logger.addScreenCaptureFromPath(getScreenshot(driver));
 			}
 			else
 				logger.fail(details);
@@ -109,7 +100,7 @@ public class Reports{
 		try {
 			if (enableScreenshotForWarningFlagIS) {
 				logger.warning(details, MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot(driver)).build());
-				attachedScreenshotInReport();
+				logger.addScreenCaptureFromPath(getScreenshot(driver));
 			}
 			else
 				logger.warning(details);
@@ -134,7 +125,7 @@ public class Reports{
 		String screenshotPath="";
 		try {
 			File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			screenshotPath = System.getProperty("user.dir")+"/Screenshots/"+fn_getDateTime()+".png";
+			screenshotPath = reportPath + File.separator + strTestName + "_" + fn_getDateTime() + ".jpg";
 			FileHandler.copy(src, new File(screenshotPath));
 			return screenshotPath;
 		} catch (Exception ex) {
