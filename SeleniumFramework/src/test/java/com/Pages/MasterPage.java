@@ -139,4 +139,18 @@ public class MasterPage {
 		} return new PhpTravelsPage(driver, report);
 	}
 	
+	public AestheticrecordLoginPage launchAestheticApplication(WebDriver driver, String url) {
+		try {
+			driver.navigate().to(url);
+			
+			if (waitForElementLoad(By.xpath(".//input[@name='email']")))
+				report.reportPassEvent(driver, "Launched Application");
+			else
+				report.reportFailEvent(driver, "Unable to launch the application");
+		} catch (Exception ex) {
+			report.reportWarningEvent(driver, ex.getMessage());
+		}
+		return new AestheticrecordLoginPage(driver, report);
+	}
+	
 }

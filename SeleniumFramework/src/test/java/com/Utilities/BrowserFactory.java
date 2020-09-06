@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BrowserFactory {
 	
 	WebDriver driver;
@@ -15,8 +17,8 @@ public class BrowserFactory {
 		
 		if (Browser.equals("Chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
-			
+			//System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
+			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 			
 		}
@@ -59,8 +61,8 @@ public class BrowserFactory {
 		
 		if (Browser.equals("Chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
-			
+			//System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
+			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 			
 		}
