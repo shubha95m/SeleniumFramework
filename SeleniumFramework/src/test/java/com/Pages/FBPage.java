@@ -16,8 +16,6 @@ public class FBPage extends MasterPage{
 		// TODO Auto-generated constructor stub
 	}
 
-	WebDriver driver;
-
 	
 	@FindBy(id="email")
 	public WebElement username;

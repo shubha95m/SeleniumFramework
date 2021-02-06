@@ -51,7 +51,7 @@ public class BaseClass {
 //		ExtentHtmlReporter reporter = new ExtentHtmlReporter(new File(System.getProperty("user.dir") +"/Reports/FbLogin"+Helper.getCurrentDateTime()+".html"));
 //		extent = new ExtentReports();
 //		extent.attachReporter(reporter);
-		driver = BrowserFactory.startApplication(driver, config.getBrowser());
+		driver = BrowserFactory.startApplication(driver, config.getBrowser(), config.getDataFromConfig("fbUrl"));
 		System.out.println("Browser and URL are up and running");
 	}
 	

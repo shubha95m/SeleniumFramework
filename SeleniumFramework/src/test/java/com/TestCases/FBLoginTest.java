@@ -21,7 +21,7 @@ public class FBLoginTest extends BaseClass {
 
 		System.out.println("page title is:----------- " +driver.getTitle());
 		
-		FBPage FBPage = PageFactory.initElements(driver, FBPage.class);
+		FBPage FBPage = new FBPage(driver, report);
 		
 		//generic.launchApplication(config.getDataFromConfig("fbUrl"));
 		
@@ -37,7 +37,7 @@ public class FBLoginTest extends BaseClass {
 		
 	}
 	
-	@Test(priority=1)
+	//@Test(priority=1)
 	public void logintoGmailThroughSekuli() {
 		
 		logger = extent.createTest("login to Gmail Through Sekuli tool");
