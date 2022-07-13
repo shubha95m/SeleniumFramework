@@ -4,3 +4,16 @@
 *.xml
 *.html
 *.html
+SeleniumFramework/test-output/Default suite/Default test.html
+SeleniumFramework/test-output/Default suite/Default test.xml
+SeleniumFramework/test-output/emailable-report.html
+SeleniumFramework/test-output/index.html
+SeleniumFramework/test-output/junitreports/TEST-com.TestCases.PhpTravelLoginTest.xml
+SeleniumFramework/test-output/old/Default suite/classes.html
+SeleniumFramework/test-output/old/Default suite/methods-alphabetical.html
+SeleniumFramework/test-output/old/Default suite/methods-not-run.html
+SeleniumFramework/test-output/old/Default suite/methods.html
+SeleniumFramework/test-output/old/Default suite/testng.xml.html
+SeleniumFramework/test-output/old/Default suite/toc.html
+SeleniumFramework/test-output/old/index.html
+SeleniumFramework/test-output/testng-results.xml
