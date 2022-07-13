@@ -2,3 +2,15 @@
 *.jpg
 *.html
 SeleniumFramework/sikuli-script.jar
+SeleniumFramework/1.xml
+SeleniumFramework/testng1.xml
+SeleniumFramework/Screenshots/2021_02_06_16-17-21.png
+SeleniumFramework/Screenshots/2021_02_06_16-20-08.png
+SeleniumFramework/Screenshots/2021_02_06_17-06-43.png
+SeleniumFramework/Screenshots/2021_02_06_17-08-58.png
+SeleniumFramework/Screenshots/2021_09_22_12-51-58.png
+SeleniumFramework/Screenshots/2021_09_22_13-13-56.png
+SeleniumFramework/Screenshots/2021_09_22_13-15-16.png
+SeleniumFramework/Screenshots/2021_09_22_13-15-17.png
+SeleniumFramework/Screenshots/2021_09_22_13-18-29.png
+SeleniumFramework/test-output/junitreports/TEST-com.TestCases.Session2Test.xml
