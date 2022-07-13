@@ -55,7 +55,7 @@ public class BaseClass {
 		System.out.println("Browser and URL are up and running");
 	}
 	
-	@AfterTest
+	//@AfterTest
 	public void tearDown() {
 		try {
 			Thread.sleep(2000);

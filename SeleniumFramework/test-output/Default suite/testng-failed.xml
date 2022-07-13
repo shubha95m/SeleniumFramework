@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestCases.AestheticrecordLoginTest">
+      <class name="com.TestCases.FBLoginTest">
         <methods>
+          <include name="loginFB"/>
           <include name="objectFactory"/>
-          <include name="tearDown"/>
-          <include name="loginIntoAestheticSite"/>
         </methods>
-      </class> <!-- com.TestCases.AestheticrecordLoginTest -->
+      </class> <!-- com.TestCases.FBLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

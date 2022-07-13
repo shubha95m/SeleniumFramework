@@ -1,5 +1,7 @@
 package com.TestCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -20,11 +22,11 @@ public class AestheticrecordLoginTest extends BaseClass{
 		
 		AestheticrecordLoginPage aesthetic = master.launchAestheticApplication(driver, url);
 		
-		Assert.assertTrue(aesthetic.isPageloaded(), "Aeshthetic page is not loaded");
+		AssertJUnit.assertTrue(aesthetic.isPageloaded(), "Aeshthetic page is not loaded");
 		aesthetic.enterUser(userID);
 		aesthetic.enterPassword(password);
 		AestheticHomePage home = aesthetic.clickOnLoginButtton();
-		Assert.assertTrue(home.verifyHomePage(), "Aeshthetic home page is not loaded");
+		AssertJUnit.assertTrue(home.verifyHomePage(), "Aeshthetic home page is not loaded");
 	}
 
 }

@@ -1,6 +1,7 @@
 package com.Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -8,15 +9,16 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.Utilities.Generic;
 import com.Utilities.Reports;
 
 
-public class MasterPage {
+public class MasterPage extends BaseClass{
 	
 	public WebDriver driver;
-	public Reports report;
+	//public Reports report;
 	public Generic generic = new Generic();
 	
 	public MasterPage(WebDriver driver, Reports report) {
@@ -130,7 +132,7 @@ public class MasterPage {
 		try {
 			driver.navigate().to(url);
 			
-			if (waitForElementLoad(By.xpath(".//input[@name='username']")))
+			if (waitForElementLoad(By.xpath(".//input[@name='email']")))
 				report.reportPassEvent(driver, "Launched Application");
 			else
 				report.reportFailEvent(driver, "Unable to launch the application");
